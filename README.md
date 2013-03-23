@@ -1,4 +1,4 @@
 CodeIgniterStarter
 ==================
 
-CodeIgniter Starter
+CodeIgniter Starter with Virtual Host and friendly URL (without index.php)
