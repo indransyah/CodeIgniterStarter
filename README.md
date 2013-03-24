@@ -58,15 +58,19 @@ diubah dengan menghilangkan` index.php` di CodeIgniterStarter ini.
         </Directory>
     </VirtualHost>
     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-	>   Ubah DocumentRoot dan Directory sesuai dengan path project Anda
+	>   Ubah DocumentRoot dan Directory sesuai dengan path project
 	>   
-    >   Ubah ServerName dan ServerAlias sesuai domain yang ditambahkan di file
-    >   hosts
+    >   Ubah ServerName dan ServerAlias sesuai domain yang dijadikan sebagai Virtual Host
     >   
     >   Yang lainnya optional
 
-4.  Restart XAMPP
-
+4.  Ubah base_url pada file configurasi CodeIgniter (`application\config\config.php`) sesuai dengan domain Virtual Host
+    
+	~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    $config['base_url']	= 'http://www.codeigniterstarter.com';
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+	
+5.  Restart XAMPP
 
 
 ### Tested on
@@ -74,3 +78,5 @@ diubah dengan menghilangkan` index.php` di CodeIgniterStarter ini.
 -   Windows 7
 
 -   XAMPP 1.8.1
+
+-   CodeIgniter 2.1.3
